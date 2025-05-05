@@ -65,7 +65,7 @@ let bilbo = {
 arr.push(bilbo)
 console.table(arr)
 
-//Finally, use the values of each object within the array and the array’s length property to calculate the average age of the group. 
+// Finally, use the values of each object within the array and the array’s length property to calculate the average age of the group. 
 // This calculation should be accomplished using a loop.
 let avgAge = 0;
 for (let i = 0; i < arr.length; i++) {
