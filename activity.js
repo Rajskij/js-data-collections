@@ -77,12 +77,12 @@ for (let i = 0; i < csv.length; i++) {
 // Easier way to solve Part 3
 let objArr = []
 
-for (let row of table) {
+for (let i = 1; i < table.length; i++) {
     let obj = {
-        id: row[0],
-        name: row[1],
-        occupation: row[2],
-        age: row[3]
+        id: table[i][0],
+        name: table[i][1],
+        occupation: table[i][2],
+        age: table[i][3]
     }
 
     objArr.push(obj)
