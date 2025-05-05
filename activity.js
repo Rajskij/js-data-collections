@@ -75,26 +75,17 @@ for (let i = 0; i < csv.length; i++) {
 // console.log(objArr)
 
 // Easier way to solve Part 3
-let obj = {}
 let objArr = []
 
-for (let i = 1; i < table.length; i++) {
-    let row = table[i]
-
-    for (let j = 0; j < row.length; j++) {
-        if (j === 0) {
-            obj.id = row[j]
-        } else if (j === 1) {
-            obj.name = row[j]
-        } else if (j === 2) {
-            obj.occupation = row[j]
-        } else {
-            obj.age = row[j]
-        }
+for (let row of table) {
+    let obj = {
+        id: row[0],
+        name: row[1],
+        occupation: row[2],
+        age: row[3]
     }
 
-    objArr[i - 1] = obj
-    obj = {}
+    objArr.push(obj)
 }
 
 console.log(objArr)
